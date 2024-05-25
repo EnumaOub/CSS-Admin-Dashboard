@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CSS Admin Dashboard</title>
+</head>
+<body>
+
+    <main>
+        <header>
+            <div class="top-header">
+                <form action="" method="post" class="search">
+                    <button type="submit" form="search" value="Submit" id="btn-search"><img src="media/icons/magnify.svg" alt="search icon" class="icon search" width="40" ></button> 
+                    <label for="site-search"></label>
+                    <input type="search" id="site-search" name="q" placeholder="Search..."/>
+                </form>
+                <div class="bckg-chg">
+                    <img src="media/icons/white-balance-sunny.svg" alt="day icon" class="icon sun" width="40" >
+                    <img src="media/icons/weather-night.svg" alt="night icon" class="icon night" width="40" >
+                    <a href="https://github.com/EnumaOub"><img src="media/icons/github.svg" alt="github icon" class="icon github" width="40" >
+                </div>
+            </div>
+            <div class="bottom-header">
+                <div class="user">
+                    <p>Hi,</p>
+                    <img src="media/icons/user_random.png" alt="enuma icon" class="icon enuma" width="40" ><h2>EnumaOub (@EnumaOub)</h2>
+                </div>
+                <div class="btn-gen">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </header>
+
+        <nav class="sidebar">
+            <h1 class="title">Dashboard</h1>
+            <div class="main-links">
+                <h3><img src="media/icons/home.svg" alt="home icon" class="icon home" width="40" > Home</h3>
+                <h3><img src="media/icons/account.svg" alt="account icon" class="icon profiles" width="40" > Profile</h3>
+                <h3><img src="media/icons/message-reply-outline.svg" alt="messages icon" class="icon messages" width="40" > Messages</h3>
+                <h3><img src="media/icons/history.svg" alt="history icon" class="icon history" width="40" > History</h3>
+                <h3><img src="media/icons/file-document-multiple-outline.svg" alt="files icon" class="icon tasks" width="40" > Tasks</h3>
+                <h3><img src="media/icons/account-group-outline.svg" alt="account group icon" class="icon communities" width="40" > Communities</h3>
+            </div>
+            <div class="side-links">
+                <h3><img src="media/icons/cog-outline.svg" alt="cog icon" class="icon settings" width="40" > Settings</h3>
+                <h3><img src="media/icons/face-agent.svg" alt="face agent icon" class="icon support" width="40" > Support</h3>
+                <h3><img src="media/icons/lock-outline.svg" alt="lock icon" class="icon privacy" width="40" > Privacy</h3>
+            </div>
+        </nav>
+
+        <div class="main-content">
+            <div class="projects">
+                <card>
+                    <img src="media/projects/Calclator.png" alt="calculator" width="100">
+                    <div class="content-card">
+                        <h4>Calculator</h4>
+                        <p>A calculator App written using Javascript.</p>
+                        <p>CSS/HTML/JS</p>
+                        <p>
+                            <a href="https://enumaoub.github.io/Calculator/"><img src="media/icons/eye.svg" alt="eye icon" class="icon eye" width="40" ></a>
+                            <a href="https://github.com/EnumaOub/Calculator"><img src="media/icons/github.svg" alt="github icon" class="icon github" width="40" ></a>
+                        </p>
+                    </div>
+                </card>
+                <card>
+                    <img src="media/projects/Etch-a-sketch.png" alt="etch a sketch" width="100">
+                    <div class="content-card">
+                        <h4>Etch-a-Sketch</h4>
+                        <p>A changing grid which can be used to draw.</p>
+                        <p>CSS/HTML/JS</p>
+                        <p>
+                            <a href="https://enumaoub.github.io/Etch-a-Sketch/"><img src="media/icons/eye.svg" alt="eye icon" class="icon eye" width="40" ></a>
+                            <a href="https://github.com/EnumaOub/Etch-a-Sketch"><img src="media/icons/github.svg" alt="github icon" class="icon github" width="40" ></a>
+                        </p>
+                    </div>
+                </card>
+                <card>
+                    <img src="media/projects/rock-paper-scissors.png" alt="recipe list" width="100">
+                    <div class="content-card">
+                        <h4>Rock Paper Scissors</h4>
+                        <p>Rock Paper Scissors written in javascript.</p>
+                        <p>CSS/HTML/JS</p>
+                        <p>
+                            <a href="https://enumaoub.github.io/Rock-Paper-Scissors/"><img src="media/icons/eye.svg" alt="eye icon" class="icon eye" width="40" ></a>
+                            <a href="https://github.com/EnumaOub/Rock-Paper-Scissors"><img src="media/icons/github.svg" alt="github icon" class="icon github" width="40" ></a>
+                        </p>
+                    </div>
+                </card>
+                <card>
+                    <img src="media/projects/recipes.png" alt="recipe list" width="100">
+                    <div class="content-card">
+                        <h4>Recipe Lists</h4>
+                        <p>List of recipes in English and French, changing language with a simple button.</p>
+                        <p>CSS/HTML/JS</p>
+                        <p>
+                            <a href="https://enumaoub.github.io/Recipes_Lists/"><img src="media/icons/eye.svg" alt="eye icon" class="icon eye" width="40" ></a>
+                            <a href="https://github.com/EnumaOub/Recipes_Lists"><img src="media/icons/github.svg" alt="github icon" class="icon github" width="40" ></a>
+                        </p>
+                    </div>
+                </card>
+            </div>
+            <div class="side-content">
+                <h2>Announcements</h2>
+                <card>
+                    <div class="content-card">
+                        <h4>Site Maintenance</h4>
+                        <p>This is not yet used, so this is completly empty</p>
+                        <hr>
+                        <h4>Community Share Day</h4>
+                        <p>This is not yet used, so this is completly empty</p>
+                        <hr>
+                        <h4>Updated Privacy Policy</h4>
+                        <p>This is not yet used, so this is completly empty</p>
+                        <hr>
+                    </div>
+                </card>
+                <h2>Trending</h2>
+                <card>
+                    <div class="content-card">
+                        <img src="media/icons/woman-user-circle-icon.svg" alt="woman icon" class="icon woman" width="40" ><h4>@Ardin</h4>
+                        <p>Tester</p>
+                        <img src="media/icons/user_random.png" alt="enuma icon" class="icon enuma" width="40" ><h4>@EnumaOub</h4>
+                        <p>Project builder</p>
+                        <img src="media/icons/woman-user-circle-icon.svg" alt="man icon" class="icon man" width="40" ><h4>@Testerdu22</h4>
+                        <p>Tester of Soft</p>
+                    </div>
+                </card>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
