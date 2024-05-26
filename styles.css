@@ -10,7 +10,7 @@
     --sideb-back-color: #4a0058;
     --sideb-font-color: aliceblue;
     --header-search-color: rgb(170, 170, 170);
-
+    --subtext-color: rgb(95, 95, 95);
 }
 
 /* Set various General Styles */
@@ -46,7 +46,7 @@ h4 {
 
 p {
     font-size: max(1vw, 1rem);
-    color: rgb(95, 95, 95);
+    color: var(--subtext-color);
 }
 
 a {
@@ -192,6 +192,11 @@ header .icon, .bckg-chg a {
     -webkit-filter: invert(50%);
 }
 
+
+.sun.icon {
+    cursor: not-allowed;
+    -webkit-filter: invert(50%);
+}
 
 
 /* Bottom Header */
