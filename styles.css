@@ -5,7 +5,7 @@
 
 /* Set various General Styles */
 
-html {
+:root {
     --main-bck-color: #ffffff;
     --second-bck-color: #e5ebf3;
     --third-bck-color: #4a0058;
@@ -18,28 +18,28 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: max(2.6vw, 1.4rem);
     font-weight: 900;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: max(1.5vw, 1.5rem);
     font-weight: 600;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: max(1.3vw, 1.2rem);
     font-weight: 400;
 }
 
 h4 {
-    font-size: 1rem;
+    font-size: max(1vw, 1rem);
     font-weight: 600;
     margin: 0;
 }
 
 p {
-    font-size: 1rem;
+    font-size: max(1vw, 1rem);
     color: rgb(95, 95, 95);
 }
 
@@ -61,7 +61,6 @@ hr {
 /* Change to the images */
 
 img {
-    width: 10%;
     object-fit: cover;
 }
 
@@ -104,10 +103,14 @@ main {
 .sidebar .icon {
     -webkit-filter: invert(100%);
     border: none;
+    width: 2rem;
+    cursor: pointer;
 }
 
 .sidebar h3 {
+    display: flex;
     cursor: pointer;
+    gap: 1rem;
 }
 
 .sidebar h3:hover {
@@ -150,12 +153,12 @@ header .icon {
     gap: 1rem;
 }
 
-.bckg-chg .icon, .bckg-chg a {
+header .icon, .bckg-chg a {
     width: 2rem;
     cursor: pointer;
 }
 
-.bckg-chg a:hover, .bckg-chg .icon:hover {
+.bckg-chg a:hover {
     width: 2.2rem;
     -webkit-filter: invert(100%);
 }
@@ -205,6 +208,7 @@ header .icon {
     margin-right: 3rem;
     margin-top: 2rem;
 }
+
 
 .bottom-header button {
     border-radius: 20px;
@@ -302,33 +306,41 @@ card, ul.content-card {
     list-style-type: none;
 }
 
-
-@media only screen and (max-width: 1500px) {
-    h1 {
-        font-size: 2rem;
-        font-weight: 900;
-    }
+.trending .content-card li {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2.2rem;
 }
 
-@media only screen and (max-width: 1150px) {
-    h1 {
-        font-size: 1.3rem;
-        font-weight: 900;
-    }
-
-    h3 {
-        font-size: 1rem;
-        font-weight: 900;
-    }
+.trending .content-card li:last-child {
+    margin-bottom: 0;
 }
 
 
+.trending .content-card li div {
+    display: flex;
+    align-content: flex-start;
+}
 
-@media only screen and (max-width: 900px) {
+.trending .content-card li div p {
+    margin: 0;
+}
+
+
+
+
+@media only screen and (max-width: 1100px) {
 
     .sidebar {
-        grid-template-rows: 5rem 12rem 4rem;
+        grid-template-rows: 5rem 30rem 4rem;
+        justify-items: center;
     }
+
+    .sidebar h3 span {
+        display: none;
+    }
+
 
     .top-header input {
         padding-right: 3rem;
@@ -362,37 +374,12 @@ card, ul.content-card {
         padding: 0.3rem 1.6rem;
     }
 
-    h1 {
-        font-size: 1.2rem;
-        font-weight: 900;
-    }
-    
-    h2 {
-        font-size: 1rem;
-        font-weight: 600;
-    }
-    
-    h3 {
-        font-size: 0.8rem;
-        font-weight: 400;
-    }
-    
-    h4 {
-        font-size: 0.8rem;
-        font-weight: 600;
-        margin: 0;
-    }
-    
-    p {
-        font-size: 0.8rem;
-        color: rgb(95, 95, 95);
-    }
 }
 
 
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
     .main-content {
         grid-template-columns: 1fr;
     }
